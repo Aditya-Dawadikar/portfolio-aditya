@@ -9,30 +9,85 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
 </head>
 <body class="body">
-    <div class="side-bar">
-        <div class="space">
-            <img class="logo" src="assets/logo-black.svg">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="side-bar">
+            <div class="space">
+                <img class="logo" src="assets/logo-black.svg">
+            </div>
+            <h3 class="text-dark name">Aditya Dawadikar (@geekgod)</h3>
+            <br>
+            <ul class="list-group ul-elem">
+                <li class="list-group-item li-item"><a class="fw-bolder anchor text-white" href="index.html">Projects</a></li>
+                <li class="list-group-item li-item active-li"><a class="fw-bolder anchor text-white" href="about.html">About me</a></li>
+                <li class="list-group-item li-item row row-cols-6 contact-container">
+                    <div class="col"><a href="https://www.linkedin.com/in/aditya-dawadikar/" target="_blank"><img class="contact-icon" src="./assets/linkedin.svg"></a></div>
+                    <div class="col"><a href="https://github.com/aditya-dawadikar" target="_blank"><img class="contact-icon" src="./assets/github.svg"></a></div>
+                </li>
+                <li class="list-group-item li-item">adityadawadikar2000@gmail.com</li>            
+            </ul>
         </div>
-        <h3 class="text-dark name">Aditya Dawadikar (@geekgod)</h3>
-        <br>
-        <ul class="list-group ul-elem">
-            <li class="list-group-item li-item"><a class="fw-bolder anchor" href="index.html">Projects</a></li>
-            <li class="list-group-item li-item active-li"><a class="fw-bolder anchor text-white" href="about.html">About me</a></li>
-            <li class="list-group-item li-item row row-cols-6 contact-container">
-                <div class="col"><a href="https://www.linkedin.com/in/aditya-dawadikar/" target="_blank"><img class="contact-icon" src="./assets/linkedin.svg"></a></div>
-                <div class="col"><a href="https://github.com/aditya-dawadikar" target="_blank"><img class="contact-icon" src="./assets/github.svg"></a></div>
-            </li>
-            <li class="list-group-item li-item">adityadawadikar2000@gmail.com</li>            
-        </ul>
     </div>
     <div class="main">
         <div class="hero fw-bolder">Aditya Dawadikar (@geekgod)</div>
         <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at tellus in massa fringilla vestibulum. Ut consectetur nisl quis elit mattis dignissim. Curabitur enim magna, congue ut mollis et, vestibulum a erat. Nullam a metus vitae justo condimentum dignissim. Cras feugiat elementum gravida. Vivamus lacinia libero in porta pretium. Quisque ante elit, consectetur in velit eu, rutrum lobortis purus. In eu ante vulputate, laoreet lacus eu, commodo diam. Vestibulum sodales consequat pellentesque. Curabitur convallis libero nec lorem ullamcorper condimentum. Mauris et mi suscipit, ultrices tortor id, interdum mauris. Aenean ut enim vel tortor pulvinar aliquet. Curabitur at elit velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         </div>
-        <img class="logo-watermark" src='./assets/logo-yellow.svg'>
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+        <!-- <img class="logo-watermark" src='./assets/logo-yellow.svg'> -->
     </div>
 </body>
+<script src='./scripts/data.js'></script>
+<script src='./scripts/loader.js'></script>
+<script>
+    var ctx = document.getElementById('myChart');
+    var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['JAVA', 'C++', 'JavaScript', 'SQL', 'MongoDB', 'React','Angular'],
+        datasets: [{
+            label: '',
+            data: [3.5, 3, 3.5, 3, 3.5, 4,3],
+            backgroundColor: [
+                'rgba(255, 206, 86, 0.2)',
+            ],
+            borderColor: [
+                'rgba(255, 206, 86, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        scales: {
+            yAxes: [{
+                display: true,
+                ticks: {
+                    suggestedMin: 2,    // minimum will be 0, unless there is a lower value.
+                    max: 5,
+                },
+            }]
+        },plugins: {
+                title: {
+                    display: true,
+                    text: "Skill rating out of 5",
+                    padding: {
+                        top: 10,
+                        bottom: 10
+                    }
+                },
+                legend:{
+                    display:false,
+                }
+    }
+    }
+    });
+
+</script>
 </html>

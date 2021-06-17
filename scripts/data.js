@@ -19,13 +19,13 @@ projects=[
     },
     {
         title:"Skill Board api",
-        tech: "Mongodb,Express,Nodejs",
+        tech: "Mongodb, Express, Nodejs",
         description:"A server for a skill visualizer for students. Recruiters can filter out the students based on their skills and academic performance. This project was registered for HacktoberFest 2020 in collaboration with DevsCollab org.",
         link:"https://github.com/devscollab/skill-board-api"
     },
     {
         title:"Sorting Algorithm Visualizer",
-        tech: "HTML,CSS,JS",
+        tech: "HTML, CSS, JS",
         description:"A weekend project for visualizing the working of sorting algorithms.Built completely from scratch using HTML canvas",
         link:"https://github.com/Aditya-Dawadikar/Sorting-algorithm-visualizer"
     },
