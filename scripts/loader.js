@@ -1,12 +1,35 @@
 $(document).ready(() => {
+    // projects.forEach(project => {
+    //     $("#project-grid").append(`
+    //         <div class="col">
+    //             <div class="card">
+    //                 <div class="flip-card">
+    //                     <div class="flip-card-inner">
+    //                     <div class="justify-content-center flip-card-front">
+    //                         <h3>${project.title}</h3>
+    //                         <p>${project.category}</p>
+    //                         <h6 class="text-white">(${project.tech})</h6>
+    //                     </div>
+    //                     <div class="flip-card-back">
+    //                         <div class="description">
+    //                             ${project.description}
+    //                         </div>
+    //                         <a href="${project.link}" target="_blank">LINK</a>
+    //                     </div>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     `);
+    // })
     projects.forEach(project => {
         $("#project-grid").append(`
             <div class="col">
-                <div class="card">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                         <div class="justify-content-center flip-card-front">
                             <h3>${project.title}</h3>
+                            <p>${project.category}</p>
                             <h6 class="text-white">(${project.tech})</h6>
                         </div>
                         <div class="flip-card-back">
@@ -17,7 +40,6 @@ $(document).ready(() => {
                         </div>
                         </div>
                     </div>
-                </div>
             </div>
         `);
     })
