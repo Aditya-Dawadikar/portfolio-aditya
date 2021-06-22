@@ -7,7 +7,7 @@ $(document).ready(() => {
                         <div class="flip-card-inner">
                         <div class="justify-content-center flip-card-front">
                             <h3>${project.title}</h3>
-                            <h6 class="text-dark">(${project.tech})</h6>
+                            <h6 class="text-white">(${project.tech})</h6>
                         </div>
                         <div class="flip-card-back">
                             <div class="description">

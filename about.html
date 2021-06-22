@@ -19,26 +19,58 @@
             <div class="space">
                 <img class="logo" src="assets/logo-black.svg">
             </div>
-            <h3 class="text-dark name">Aditya Dawadikar (@geekgod)</h3>
+            <h3 class="name">Aditya Dawadikar</h3>
             <br>
             <ul class="list-group ul-elem">
                 <li class="list-group-item li-item"><a class="fw-bolder anchor text-white" href="index.html">Projects</a></li>
                 <li class="list-group-item li-item active-li"><a class="fw-bolder anchor text-white" href="about.html">About me</a></li>
-                <li class="list-group-item li-item row row-cols-6 contact-container">
-                    <div class="col"><a href="https://www.linkedin.com/in/aditya-dawadikar/" target="_blank"><img class="contact-icon" src="./assets/linkedin.svg"></a></div>
-                    <div class="col"><a href="https://github.com/aditya-dawadikar" target="_blank"><img class="contact-icon" src="./assets/github.svg"></a></div>
+                <li class="list-group-item li-item">
+                    <ul class="contact-container">
+                        <li class="img-bg">
+                            <a href="https://www.linkedin.com/in/aditya-dawadikar/" target="_blank">
+                                <img class="contact-icon" src="./assets/linkedin.svg">
+                            </a>
+                        <li>
+                        <li class="img-bg">
+                            <a href="https://github.com/aditya-dawadikar" target="_blank">
+                                <img class="contact-icon" src="./assets/github.svg">
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="list-group-item li-item">adityadawadikar2000@gmail.com</li>            
+                <!-- <li class="list-group-item li-item text-white">adityadawadikar2000@gmail.com</li>             -->
             </ul>
         </div>
     </div>
     <div class="main">
-        <div class="hero fw-bolder">Aditya Dawadikar (@geekgod)</div>
+        <div class="hero fw-bolder">Hello! I'm Aditya Dawadikar</div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at tellus in massa fringilla vestibulum. Ut consectetur nisl quis elit mattis dignissim. Curabitur enim magna, congue ut mollis et, vestibulum a erat. Nullam a metus vitae justo condimentum dignissim. Cras feugiat elementum gravida. Vivamus lacinia libero in porta pretium. Quisque ante elit, consectetur in velit eu, rutrum lobortis purus. In eu ante vulputate, laoreet lacus eu, commodo diam. Vestibulum sodales consequat pellentesque. Curabitur convallis libero nec lorem ullamcorper condimentum. Mauris et mi suscipit, ultrices tortor id, interdum mauris. Aenean ut enim vel tortor pulvinar aliquet. Curabitur at elit velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <p>
+                I am a self taught webdeveloper who leveraged the quarantine and learned a new Skill. I have built a few moderate level projects and also mentored my peers while working on projects.
+                I have found a love for frontend frameworks like REACT and NodeJs for backend. I can also build apps with Angular and pretty much integrate any framework/library that is well documented ; )
+            </p>    
+            <p>
+                Source codes for all my application are available on my <a href="https://github.com/aditya-dawadikar">GitHub</a> 
+                and you can take take references, suggest enhancements, find bugs or collab on the projects. I would love to extend my projects. Connect with me on
+                <a href="https://www.linkedin.com/in/aditya-dawadikar/">LinkedIn</a> or email me at <a href="">adityadawadikar2000@gmail.com</a>
+                </article>
+            </p>
         </div>
-        <div class="chart">
-            <canvas id="myChart"></canvas>
+        <div class="row">
+            <div class="col skill-list">
+                My Skillset includes
+                <ul>
+                    <li>JavaScript and related frameworks</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>SQL and MongoDb</li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
         </div>
         <!-- <img class="logo-watermark" src='./assets/logo-yellow.svg'> -->
     </div>
@@ -55,10 +87,10 @@
             label: '',
             data: [3.5, 3, 3.5, 3, 3.5, 4,3],
             backgroundColor: [
-                'rgba(255, 206, 86, 0.2)',
+                'rgba(149, 12, 194, 0.3)',
             ],
             borderColor: [
-                'rgba(255, 206, 86, 1)',
+                'rgba(149, 12, 194, 1)',
             ],
             borderWidth: 1
         }]
