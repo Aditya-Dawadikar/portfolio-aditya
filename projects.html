@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Dawadikar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div class="sidebar" id="mySidebar">
+        <a class="hitCounter" href="https://visitorshitcounter.com/" target="_blank" title="Hit counter" data-name="036224be1fa3f5d995663d2b3dd970f2|5|page|1|rgb(17, 17, 17);|#ffffff|small|s-hit">Hit Counter</a><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="side-bar">
+            <div class="space">
+                <img class="logo" src="assets/logo-black.svg">
+            </div>
+            <h3 class="name">Aditya Dawadikar</h3>
+            <br>
+            <ul class="list-group ul-elem">
+                <li class="list-group-item li-item"><a class="fw-bolder anchor text-white" href="index.html">Home</a></li>
+                <li class="list-group-item li-item active-li"><a class="fw-bolder anchor text-white" href="projects.html">Projects</a></li>
+                <li class="list-group-item li-item"><a class="fw-bolder text-white anchor" href="about.html">About me</a></li>
+                <li class="list-group-item li-item-inactive">
+                    <ul class="contact-container">
+                        <li class="img-bg">
+                            <a href="https://www.linkedin.com/in/aditya-dawadikar/" target="_blank">
+                                <img class="contact-icon" src="./assets/linkedin.svg">
+                            </a>
+                        <li>
+                        <li class="img-bg">
+                            <a href="https://github.com/aditya-dawadikar" target="_blank">
+                                <img class="contact-icon" src="./assets/github.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="row project-grid" id="project-grid">
+            
+        </div>
+    </div>
+</body>
+<script src='./scripts/data.js'></script>
+<script src='./scripts/loader.js'></script>
+</html>
