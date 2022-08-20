@@ -15,12 +15,34 @@
 </head>
 <body class="body">
     <div class="center">
-        <img class="logo-center" src="./assets/logo-black.svg" alt="">
-        <div class="sup-hero">Aditya Dawadikar</div>
-        <div class="sub-hero">Web Developer</div>
+        <div style="position:absolute;left:calc(-10% - 100px);top:calc(10% - 100px);z-index: -10;scale: 1.5;opacity:0.5">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="animate-flicker three" y="75" width="100" height="100" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker four" x="75" width="100" height="100" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker two" x="75" y="75" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker one" x="150" y="25" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker three" x="50" y="150" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker one" x="75" y="150" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker two" x="50" y="50" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+            </svg>
+        </div>
+        <div style="position:absolute;right:calc(-10% - 100px);bottom:calc(50% - 100px);z-index: -10;scale: 2;rotate:180deg;opacity:0.5">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="animate-flicker four" y="75" width="100" height="100" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker one" x="75" width="100" height="100" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker four" x="75" y="75" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker three" x="150" y="25" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker two" x="50" y="150" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker three" x="75" y="150" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+                <rect class="animate-flicker one" x="50" y="50" width="50" height="50" style="stroke-width:2;stroke:#d34dff" fill="#5d1275" fill-opacity="0.5"/>
+            </svg>
+        </div>
+        <div class="sup-hero animate-charcter">Aditya Dawadikar</div>
+        <br/>
+        <div class="sub-hero animate-charcter sub">Web Developer</div>
         <div class="links">
-            <div class="button"><a class="anchor button-text" href="./projects.html">Projects</a></div>
-            <div class="button"><a class="anchor button-text" href="./about.html">About me</a></div>
+            <div class="button" onclick="window.location.href=`./projects.html`">Projects</div>
+            <div class="button" onclick="window.location.href=`./about.html`">About me</div>
         </div>
     </div>
 </body>

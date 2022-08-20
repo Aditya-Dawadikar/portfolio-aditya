@@ -1,83 +1,84 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.body{
-    display: flex;
-    background-color: #111;
+.body {
+  display: flex;
+  background-color: #111;
+  overflow-x: hidden;
 }
 
-.side-bar{
-    width: 300px;
-    background-color:rgba(137, 53, 165, 0.3);
+.side-bar {
+  width: 300px;
+  background-color: rgba(137, 53, 165, 0.3);
 }
 
-.main{
-    width: calc(100vw - 50px);
-    min-height: 100vh;
-    height: 100%;
-    background-color: black;
-    position: relative;
-    left:48px;
+.main {
+  width: calc(100vw - 50px);
+  min-height: 100vh;
+  height: 100%;
+  background-color: black;
+  position: relative;
+  left: 48px;
 }
 
-.anchor{
-    text-decoration: none;
-    color: #000;
+.anchor {
+  text-decoration: none;
+  color: #000;
 }
 
-.li-item{
-    background-color: #111;
+.li-item {
+  background-color: #111;
 }
 
-.li-item-inactive{
-    background-color: #111;
+.li-item-inactive {
+  background-color: #111;
 }
 
-.active-li{
-    background-color:rgba(137, 53, 165, 0.3);
+.active-li {
+  background-color: rgba(137, 53, 165, 0.3);
 }
 
-.ul-elem{
-    border-radius: 0px;
+.ul-elem {
+  border-radius: 0px;
 }
 
-.space{
-    height:200px;
+.space {
+  height: 100px;
 }
 
-.name{
-    margin: 10px 10px 10px 30px;
-    color: white;
+.name {
+  margin: 10px 10px 10px 30px;
+  color: white;
 }
 
-.card{
-    width: 300px;
-    height: 200px;
-    background-color: #000;
-    cursor: pointer;
-    margin: 10px;
-    z-index: 10;
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #000;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 10;
 }
 
-.card:hover{
-    background-color: #950cc2;
+.card:hover {
+  background-color: #950cc2;
 }
 
-.project-grid{
-    padding:10px
+.project-grid {
+  padding: 10px
 }
 
-.contact-icon{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 
-.img-bg{
+.img-bg {
   width: 30px;
   height: 30px;
   background-color: white;
@@ -85,66 +86,66 @@
   margin: 3px;
 }
 
-.contact-container{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: calc(50% - 35px);
-    width: 60px;
+.contact-container {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: calc(50% - 35px);
+  width: 60px;
 }
 
-.row{
-    --bs-gutter-x: 0rem;
+.row {
+  --bs-gutter-x: 0rem;
 }
 
-.margin-20{
-    margin: 20px;
+.margin-20 {
+  margin: 20px;
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left: 90px;
-    top:50px
+.logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 90px;
+  top: 50px
 }
 
-.hero{
-    margin: 30px;
-    font-size: 30px;
-    color: white;
+.hero {
+  margin: 30px;
+  font-size: 30px;
+  color: white;
 }
 
-.content{
-    margin: 30px;
-    font-size: 20;
-    color: white;
-    text-align: justify;
+.content {
+  margin: 30px;
+  font-size: 20;
+  color: white;
+  text-align: justify;
 }
 
-.logo-watermark{
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    left:calc(80% - 200px);
-    z-index: 0;
-    opacity: 0.9;
-    top:calc(70% - 250px);
+.logo-watermark {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: calc(80% - 200px);
+  z-index: 0;
+  opacity: 0.9;
+  top: calc(70% - 250px);
 }
 
-.description{
-    font-size: 14px;
+.description {
+  font-size: 14px;
 }
 
-.chart{
-    min-width: 280px;
-    /* min-height: 450px; */
-    margin: 20px;
+.chart {
+  min-width: 280px;
+  /* min-height: 450px; */
+  margin: 20px;
 }
 
-.skill-list{
+.skill-list {
   color: white;
   margin: 20px 30px 20px 30px;
 }
@@ -152,202 +153,345 @@
 
 /*---------card flip---------*/
 .flip-card {
-    background-color: transparent;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    width: 300px;
-    height: 200px;
-    cursor: pointer;
-    margin: 10px;
-    z-index: 10;
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-    box-shadow: #950cc2 0px 0px 30px;
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: rgba(137, 53, 165, 0.3);
-    border-style: solid;
-    border-width: 2px;
-    border-color: #950cc2;
-    color: white;
-    padding:20px;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: rgba(149, 12, 194,0.3);
-    border-style: solid;
-    border-width: 2px;
-    border-color: #950cc2;
-    color: white;
-    transform: rotateY(180deg);
-    padding:20px;
-    font-size: 18px;
-    word-wrap: break-word;
-  }
+  background-color: transparent;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 10;
+}
 
-  /*------end of card flip---------*/
-  /* The sidebar menu */
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  box-shadow: #950cc2 0px 0px 30px;
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(137, 53, 165, 0.3);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #950cc2;
+  color: white;
+  padding: 20px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(149, 12, 194, 0.3);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #950cc2;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+/*------end of card flip---------*/
+/* The sidebar menu */
 .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 15; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-    box-shadow: #950cc2 0px 0px 20px;
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 15;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+  box-shadow: #950cc2 0px 0px 20px;
+}
+
+/* The sidebar links */
+.sidebar a {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  top: 0;
+}
+
+.openbtn:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
   }
-  
-  /* The sidebar links */
+
   .sidebar a {
-    text-decoration: none;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+    font-size: 18px;
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
-    color: #f1f1f1;
+}
+
+@media screen and (max-width: 710px) {
+  .flip-card {
+    width: 250px;
+    height: 260px;
   }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
+}
+
+/*---------------------------------------*/
+.center {
+  /* background-color: #950cc2; */
+  padding: 20px;
+  /* width: 100%; */
+  margin: auto;
+  position: absolute;
+  top: calc(50% - 103px);
+  left: calc(50% - 300px);
+}
+
+.sup-hero {
+  font-size: 65px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.sub-hero {
+  font-size: 30px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.logo-center {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: -150px;
+  top: -50px;
+  opacity: 0.5;
+  z-index: -10;
+}
+
+.links {
+  display: flex;
+}
+
+.button {
+  padding: 5px;
+  border: #fff 2px solid;
+  margin: 40px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: #950cc2 2px solid;
+  color: #950cc2;
+  box-shadow: #950cc2 0px 0px 5px;
+}
+
+.button-text {
+  color: white;
+}
+
+.button-text:hover {
+  color: #950cc2;
+}
+
+@media screen and (max-width: 700px) {
+  .center {
     position: absolute;
-    top: -10px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbtn{
-    background-color: transparent;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    position: fixed;
-    top:0;
-  }
-  
-  .openbtn:hover {
-    background-color: rgb(0, 0, 0);
-  }
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
+    top: calc(50% - 200px);
+    left: calc(50% - 150px);
   }
 
-  @media screen and (max-width: 710px) {
-      .flip-card {
-          width: 250px;
-          height: 260px;
-      }
+  .logo-center {
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    top: 0;
+  }
+}
+
+/* --------------- SVG Animation --------------- */
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
   }
 
-  /*---------------------------------------*/
-  .center{
-    /* background-color: #950cc2; */
-    padding:20px;
-    /* width: 100%; */
-    margin: auto;
-    position: absolute;
-    top: calc(50% - 103px);
-    left: calc(50% - 300px);
-  }
-  
-  .sup-hero{
-    font-size: 65px;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
+  50% {
+    opacity: 0;
   }
 
-  .sub-hero{
-    font-size: 30px;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
   }
 
-  .logo-center{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    right: -150px;
-    top:-50px;
-    opacity: 0.5;
-    z-index: -10;
+  50% {
+    opacity: 0;
   }
 
-  .links{
-    display: flex;
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
   }
 
-  .button{
-    padding:5px;
-    border: #fff 2px solid;
-    margin: 40px 10px;
-    color: white;
+  50% {
+    opacity: 0;
   }
 
-  .button:hover{
-    border: #950cc2 2px solid;
-    box-shadow: #950cc2 0px 0px 5px;
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
   }
 
-  .button-text{
-    color: white;
+  50% {
+    opacity: 0;
   }
 
-  .button-text:hover{
-    color: #950cc2;
+  100% {
+    opacity: 1;
   }
+}
 
-  @media screen and (max-width: 700px){
-    .center{
-      position: absolute;
-      top: calc(50% - 200px);
-      left: calc(50% - 150px);
-    }
-    .logo-center{
-      width: 100px;
-      height: 100px;
-      right: 20px;
-      top: 0;
-    }
+.animate-flicker {
+  -webkit-animation: flickerAnimation 5s infinite;
+  -moz-animation: flickerAnimation 5s infinite;
+  -o-animation: flickerAnimation 5s infinite;
+  animation: flickerAnimation 5s infinite;
+}
+
+.animate-flicker.one {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.animate-flicker.two {
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.animate-flicker.three {
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+
+.animate-flicker.four {
+  -webkit-animation-delay: 2.4s;
+  -moz-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+
+/* --------------- SVG Animation --------------- */
+
+/* --------------- Hero Text Animation --------------- */
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #fff 0%,
+      #950cc2 50%,
+      #fff 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+.animate-charcter.sub{
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
+}
+
+/* --------------- Hero Text Animation --------------- */
